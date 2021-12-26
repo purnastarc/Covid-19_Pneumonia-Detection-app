@@ -8,7 +8,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Conv2D, Flatten, Dropout, MaxPooling2D
 
-
+# data set folder should contain "COVID19" amd "NORMAL" images.
 main_dir = '/content/datasets/Data'
 train_dir =os.path.join(main_dir,'train')
 test_dir = os.path.join(main_dir,'test')
