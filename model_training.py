@@ -18,7 +18,7 @@ test_covid_dir = os.path.join(test_dir,'COVID19')
 test_normal_dir = os.path.join(test_dir,'NORMAL')
 
 
-#  data preprocessing and data augmentation, training, testing, validation split
+# data augmentation, training, testing, validation split
 train_datagen = ImageDataGenerator(rescale = 1./255,validation_split = 0.2,zoom_range = 0.2,horizontal_flip = True)                               
 
 validation_datagen = ImageDataGenerator(rescale = 1./255)
