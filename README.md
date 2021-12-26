@@ -5,3 +5,7 @@ The data set used for training the model contains a mixture of “COVID-19” an
 Data augmentation was performed on the dataset by creating multiple variations of the same image to improve performance and reduce overfitting.
 The model achieved an accuracy of 95%.
 The model was provided to the end-users as a web application by integrating it into the Flask web framework.
+
+PROJECT DEMO:
+https://user-images.githubusercontent.com/67554595/147405975-ef34ed19-a03a-474a-ad77-44c9bb19cc81.mp4
+
