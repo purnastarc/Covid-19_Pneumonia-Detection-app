@@ -20,15 +20,10 @@ test_normal_dir = os.path.join(test_dir,'NORMAL')
 
 # data augmentation, training, testing, validation split
 train_datagen = ImageDataGenerator(rescale = 1./255,validation_split = 0.2,zoom_range = 0.2,horizontal_flip = True)                               
-
 validation_datagen = ImageDataGenerator(rescale = 1./255)
-
 test_datagen = ImageDataGenerator(rescale = 1./255)
-
 train_generator = train_datagen.flow_from_directory(train_dir ,target_size = (150,150), subset = 'training', batch_size = 32,class_mode = 'binary')
-
 validation_generator = train_datagen.flow_from_directory(train_dir ,target_size = (150,150),subset = 'validation',batch_size = 32,class_mode = 'binary')
-
 test_generator = test_datagen.flow_from_directory(test_dir ,target_size = (150,150),batch_size = 32,class_mode = 'binary')
 
 
